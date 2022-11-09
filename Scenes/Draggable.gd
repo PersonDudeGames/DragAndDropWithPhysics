@@ -7,7 +7,7 @@ func _process(delta: float) -> void:
 		var current_position : Vector2 = self.global_position
 		var mouse_position : Vector2 = get_global_mouse_position()
 		
-		var distance = current_position.distance_to(mouse_position)
+		var distance : float = current_position.distance_to(mouse_position)
 		var direction : Vector2 = current_position.direction_to(mouse_position)
 		
 		var speed : float = distance / delta
